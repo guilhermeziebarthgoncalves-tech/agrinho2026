@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Agro Forte • Fazenda Sustentável</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================
+       TELA INICIAL
+  ========================================== -->
+  <section class="start-screen" id="startScreen">
+
+    <div class="start-content">
+
+      <h1>
+        AGRO FORTE
+        <span>FUTURO SUSTENTÁVEL</span>
+      </h1>
+
+      <p>
+        Dirija seu trator, colha soja e cuide da fazenda sem prejudicar
+        o meio ambiente. Produza com inteligência e sustentabilidade.
+      </p>
+
+      <button id="startBtn">
+        INICIAR JOGO
+      </button>
+
+      <div class="instructions">
+        <h3>Controles</h3>
+
+        <p>⬅ ➡ ⬆ ⬇ Movimentar Trator</p>
+        <p>🌾 Passe na soja para colher</p>
+        <p>🐷 Evite assustar os porcos</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================
+       HUD
+  ========================================== -->
+  <header class="hud hidden" id="hud">
+
+    <div class="logo">
+      Agro<span>Futuro</span>
+    </div>
+
+    <div class="hud-info">
+
+      <div class="hud-card">
+        🌾 Soja:
+        <span id="score">0</span>
+      </div>
+
+      <div class="hud-card">
+        🌎 Sustentabilidade:
+        <span id="eco">100</span>
+      </div>
+
+      <div class="hud-card">
+        🐷 Porcos:
+        <span id="pigs">3</span>
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- =========================================
+       GAME AREA
+  ========================================== -->
+  <main class="game-wrapper hidden" id="gameWrapper">
+
+    <div class="farm-map" id="farmMap">
+
+      <!-- Trator -->
+      <div class="tractor" id="tractor">
+        🚜
+      </div>
+
+      <!-- Porcos -->
+      <div class="pig pig1">🐷</div>
+      <div class="pig pig2">🐷</div>
+      <div class="pig pig3">🐷</div>
+
+      <!-- Soja -->
+      <div class="soy soy1">🌾</div>
+      <div class="soy soy2">🌾</div>
+      <div class="soy soy3">🌾</div>
+      <div class="soy soy4">🌾</div>
+      <div class="soy soy5">🌾</div>
+      <div class="soy soy6">🌾</div>
+      <div class="soy soy7">🌾</div>
+      <div class="soy soy8">🌾</div>
+
+    </div>
+
+  </main>
+
+  <!-- =========================================
+       GAME OVER
+  ========================================== -->
+  <div class="game-over hidden" id="gameOver">
+
+    <div class="game-over-content">
+
+      <h2 id="gameOverTitle"></h2>
+
+      <p id="gameOverText"></p>
+
+      <button onclick="location.reload()">
+        Jogar Novamente
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
